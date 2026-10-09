@@ -31,15 +31,16 @@ st.markdown("""
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
     .main-header {
-        font-size: 2.1rem;
-        font-weight: 700;
-        color: #0F172A;
+        font-size: 34px !important;
+        font-weight: 700 !important;
+        color: #FFFFFF !important;
         letter-spacing: -0.02em;
         margin-bottom: 0.2rem;
     }
     .sub-header {
-        font-size: 0.95rem;
-        color: #64748B;
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        color: #CBD5E1 !important;
         margin-bottom: 1.2rem;
     }
     
@@ -217,8 +218,8 @@ st.sidebar.caption(f"Active Filter Records: **{len(filtered_df):,}** / {len(df_r
 # ==============================================================================
 # 4. TOP EXECUTIVE KPI SUMMARY
 # ==============================================================================
-st.markdown('<div class="main-header">Nassau Candy Distributor</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Product Line Profitability, Margin Performance & Portfolio Strategy Dashboard</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header" style="color: #FFFFFF !important; font-size: 34px !important; font-weight: 700 !important;">Nassau Candy Distributor</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header" style="color: #CBD5E1 !important; font-size: 15px !important;">Product Line Profitability, Margin Performance & Portfolio Strategy Dashboard</div>', unsafe_allow_html=True)
 
 # Active Filter Chips
 filter_info = f"<span class='filter-chip'>📅 {start_date.strftime('%b %d, %Y')} – {end_date.strftime('%b %d, %Y')}</span>"
